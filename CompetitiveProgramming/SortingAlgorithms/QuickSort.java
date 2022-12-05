@@ -5,17 +5,12 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class QuickSort {
-    static int[] array = {2, 8, 1, 7, 3, 6, 7, 5, 4};
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner("src/txt.in");
 //        Scanner sc = new Scanner(System.in);
         PrintWriter out = new PrintWriter(System.out);
-
-
         quickSort(0,array.length-1);
         System.out.println(Arrays.toString(array));
-
-
         out.flush();
         out.close();
     }
@@ -27,7 +22,7 @@ public class QuickSort {
             quickSort(index, end);
         }
     }
-
+    static int[] array = {2, 8, 1, 7, 3, 6, 7, 5, 4};
     private static int partition(int left, int right, int pivot) {
         while(left<=right){
             while(array[left]<pivot)

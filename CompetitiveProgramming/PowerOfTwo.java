@@ -1,0 +1,8 @@
+public class PowerOfTwo {
+    public static void main(String[] args) {
+
+    }
+    public boolean isPowerOfTwo(int n) {
+        return (Math.log10(n) / Math.log10(2)) % 1 == 0;
+    }
+}
